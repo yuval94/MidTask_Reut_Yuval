@@ -1,0 +1,196 @@
+
+header {
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  
+}
+
+body {
+  background: linear-gradient(to bottom , #e9f6ed, #ffffff);
+}
+header::before {
+  /* content: ""; */
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; 
+}
+
+.card{
+  width: 14rem;
+  border: 1px solid #bbbfbc;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out; 
+}
+
+#tagFilter:focus {
+  border-color: #3e4042;
+  box-shadow: 0 0 5px rgba(16, 61, 5, 0.5);
+  outline: none;
+}
+#tagFilter {
+  margin-bottom: 20px; /* או ערך אחר שתבחרי */
+}
+.row{
+  gap: 20px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.green{
+  color:green;
+}
+
+
+:root{
+  font-size: 14px;
+}
+
+.search-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+#searchInput {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #206434;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Change the color when hovering over the button */
+#searchButton:hover {
+  background-color: #45a049;
+}
+
+
+
+img {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+#nav-button img {
+  height: 25px;
+    width: 28px;
+}
+
+
+
+h1{
+  text-align: center;
+  margin-top: 63px;
+  font-size: 2rem;
+}
+
+
+
+
+
+.flex-container-nav{
+  z-index: 3;
+  display: flex;
+  gap: 22px;
+  background-color: #3b3b3b;
+  padding: 15px;
+  flex-direction: column;
+  position: absolute;
+
+}
+
+.flex-container-nav a{
+  color: white;
+}
+
+.flex-container-nav.hide-mobile{
+  display: none;
+}
+
+.hide{
+  display: block;
+}
+
+
+@media only screen and (min-width: 600px) {
+  :root{
+      font-size: 20px;
+  }
+
+  .flex-container-subjects li{
+      background-color: #e66a44;
+  }
+
+  .flex-container-subjects{
+      gap: 40px;
+  }
+
+  .flex-container-nav{
+      flex-direction: row;
+      position: relative;
+  }
+
+  .flex-container-nav.hide-mobile{
+      display: flex;
+  }
+
+  .hide{
+      display: none;
+  }
+
+  .flex-container-nav{
+      background-color: #353536;
+  }
+
+}
+
+#filter-container label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#tagFilter {
+  padding: 5px;
+  font-size: 14px;
+}
+
+#tagFilter option {
+  font-size: 14px;
+}
+.btn-primary {
+  background-color: #4e504d;
+  border-color:  #686867;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  background-color: #686867;
+  border-color:  #686867;
+  font-size: 14px; /* או ערך אחר שתבחרי */
+}

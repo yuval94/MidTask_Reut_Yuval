@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>תכנות 3 - JavaScript</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  
+</head>
+
+<body>
+  <div class="container">
+      <header style="background-image: url('img/background1.jpg');">
+          <nav>
+              <button id="nav-button" class="btn-mobile hide" onclick="toggleNav()"><img src="img/menu.png" alt="ניווט"></button>
+              <ul id="main-nav" class="flex-container-nav hide-mobile">
+                  <a href="#">דף הבית</a>
+                  <a href="#">תרגול</a>
+                  <a href="#">אודות</a>
+              </ul>
+          </nav>
+          <h1>מושגי יסוד באקסל</h1>
+      </header>
+
+      <div class="search-container">
+          <input type="text" id="searchInput" placeholder="חפש מושג">
+          <button class="btn btn-primary" onclick="search()">חיפוש</button>
+      </div>
+
+      <div id="filter-container">
+          <label for="tagFilter">בחר קטגוריה:</label>
+          <select id="tagFilter" onchange="filterByTag()">
+              <option value="all">הכל</option>
+              <option value="תפעול התכנה">תפעול התכנה</option>
+              <option value="תרשימים וגרפים">תרשימים וגרפים</option>
+              <option value="עיצוב">עיצוב</option>
+          </select>
+      </div>
+
+      <!-- פה יוצגו המערכות -->
+      <div id="itemsContainer" class="container"></div>
+
+  </div>
+</body>
+
+
+</html>
